@@ -7,12 +7,19 @@ We get 3rd party lists of username/credentials that we have to determine if accu
 # How To
 The lists are normally in the format of:
 user1@someemaildomain.local:Bearteeth1!
+
 user2@someemaildomain.local:,Zidqene11
+
 user3@someemaildomain.local:ABlogon5704
+
 user4@someemaildomain.local:BearsRule!:
+
 user4@someemaildomain.local:BearsRule2
+
 user5@someemaildomain.local:BearsRule2
+
 user6@someemaildomain.local:Bearteeth1!
+
 
 You can past these in A2 on Sheet 2 in the spreadsheet and copy the formulas from B2 through D2 down to the end and it will nicely split it out.  Add whatever Description you may want, IE where the password list came from
 
@@ -30,3 +37,13 @@ Filter for True on F and delete any of them too as if they don't meet your passw
 Once done now copy the fomulas on E and F across all of them again as you will get #REF errors on E at least after deleting stuff
 
 Now you have a nice list of usernames and passwords that you need to test.  Run the powershell script, check the output file and decide how your going to handle its results.
+
+# Excel Macro
+Needs dumped in the proper directory to work:
+[drive]:\Users\[useraccount]\AppData\Roaming\Microsoft\AddIns
+
+Then you also have to go into excel and enable it.
+
+This is NOT needed for this to work, not to mention some of the functions in the different modules may be something you really don't want excel to do, such as making calls to cmd.exe, but you don't need to use those modules for this anyway.
+
+Your password complexity may be different than ours.  Historically we had min 8 and complexity, then we went to min of 15 (no complexity), so it checks for either of those.  Modify as needed.
