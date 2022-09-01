@@ -6,6 +6,7 @@ We get 3rd party lists of username/credentials that we have to determine if accu
 
 # How To
 The lists are normally in the format of:
+
 user1@someemaildomain.local:Bearteeth1!
 
 user2@someemaildomain.local:,Zidqene11
