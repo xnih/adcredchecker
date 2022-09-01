@@ -4,7 +4,7 @@ AD Credential List Checker
 # description
 We get 3rd party lists of username/credentials that we have to determine if accurate in our setup periodically and to automate the process I built this out.
 
-#How To
+# How To
 The lists are normally in the format of:
 user1@someemaildomain.local:Bearteeth1!
 user2@someemaildomain.local:,Zidqene11
